@@ -1,0 +1,72 @@
+body {
+    background-image: url('Elon.jpg'); /* Sfondi me imazhin që dëshiron */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Galeria e fotove */
+.photo-gallery {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Qendron galeria në ekran */
+    text-align: center;
+}
+
+.photo-gallery h1 {
+    font-size: 3em;
+    color: #ff4b2b;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+}
+
+/* Përdorimi i CSS Grid për një galeri dinamikë */
+.photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Autopajtim i kolonave */
+    gap: 20px;
+    justify-items: center;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.05); /* Zgjerimi i fotos kur preket */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Teksti lëvizës në fund të faqes */
+.scrolling-text {
+    width: 100%;
+    font-size: 1.8em;
+    color: #ff4b2b;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.7);
+    font-family: 'Georgia', serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.scrolling-text p {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-text 12s linear infinite;
+}
+
+/* Efekti i animacionit për mesazhin lëvizës */
+@keyframes scroll-text {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}

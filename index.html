@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashuria Ime</title>
+    <link rel="stylesheet" href="style.css"> <!-- Lidhja me CSS -->
+</head>
+<body>
+    <div class="hearts"></div>
+    <div class="container">
+        <h1>DASHURIA JEM, ELONA</h1>
+        <p class="message">
+            E dashur, për mua je më shumë se fjalë, më shumë se ëndërr. Je inspirimi im, buzëqeshja ime dhe gjithçka që më bën të ndihem gjallë. Dashuria që ndjej për ty është më e madhe se gjithçka, dhe do të jetë përjetë.
+        </p>
+        <button class="button" id="heart-button">
+            PREKE ZEMREN QE VEQ PER TY RREH
+        </button>
+        <div class="animated-heart" id="animated-heart"></div>
+
+        <!-- Buton për të aktivizuar muzikën -->
+        <button onclick="playMusic()" id="play-music-btn">MUZIKA JONE</button>
+        
+        <!-- Muzika që do të luhet kur përdoruesi klikon -->
+        <audio id="background-music" loop>
+            <source src="Elona.mp3" type="audio/mp3">
+            <p>Pa suport për audio.</p>
+        </audio>
+    </div>
+
+    <!-- Lidhja me JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
